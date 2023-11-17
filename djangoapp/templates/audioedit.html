@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <input type="text" name="audioname" value="{{data.audio}}"><br>
+  <input type="file" name="fileaudio" value="{{data.audio1}}"><br>
+    <input type="text" name="videoname" value="{{data.video}}"><br>
+  <input type="file" name="filevideo" value="{{data.video1}}"><br>
+     <input type="text" name="pdfname" value="{{data.pdf}}"><br>
+  <input type="file" name="filepdf" value="{{data.pdf1}}"><br>
+    <button type="submit">Update</button>
+
+    <input type="submit">
+
+
+</form>
+</body>
+</html>

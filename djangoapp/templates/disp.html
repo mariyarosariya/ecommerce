@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in user_list %}
+<h2>{{i.id}}</h2>
+<h2>{{i.name}}</h2>
+<h2>{{i.email}}</h2>
+<a href="http://127.0.0.1:8000/djangoapp/up/{{i.id}}">update</a>
+<a href="http://127.0.0.1:8000/djangoapp/del/{{i.id}}">delete</a>
+<a href="http://127.0.0.1:8000/djangoapp/detail/{{i.id}}">detail</a>
+{% endfor %}
+
+</body>
+</html>

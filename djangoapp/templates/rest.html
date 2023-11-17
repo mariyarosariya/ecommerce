@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>moviename</th>
+        <th>relasedate</th>
+        <th>characters</th>
+        <th>theatre</th>
+        <th>director</th>
+        <th>rating</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.moviename}}</td>
+        <td>{{i.relase_date}}</td>
+        <td>{{i.character_name}}</td>
+        <td>{{i.theatre_name}}</td>
+        <td>{{i.director_name}}</td>
+        <td>{{i.rating}}</td>
+    </tr>
+    {%  endfor %}
+</table>
+
+
+
+</body>
+</html>

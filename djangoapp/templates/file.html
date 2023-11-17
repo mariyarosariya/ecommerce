@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <style>
+        button:hover {
+            transform: scale(1.2);
+        }
+        #aa{
+            background-image: url({% static 'img.png'%});
+            background-repeat: no-repeat;
+            background-size: 1500px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="aa">
+    <div style="height: 400px;width: 500px;background-color: rgb(30, 189, 178);margin-left: 770px;margin-top: 150px;
+    border-radius: 10px;">
+        <form action="post" enctype="multipart/form-data">{% csrf_token %}
+            <label for="" style="margin-left: 70px;">File Name</label>
+            <input type="text" name="fname" style="width: 200px;height: 30px;margin-left: 50px;margin-top: 50px;"><br>
+
+            <label for="" style="margin-left: 70px;">File Image</label>
+            <input type="file" name="fimage" style="margin-left: 50px;margin-top: 30px;"><br>
+
+            <label for="" style="margin-left: 70px;">Description</label>
+            <textarea name="fdescription"
+                style="width: 200px;height: 60px;margin-left: 45px;margin-top: 30px;"></textarea>
+
+            <button
+                style="height: 30px;width: 100px;margin-left: 190px;margin-top: 50px;
+                background-color: rgb(41, 41, 86);box-shadow: 5px 5px 5px black;
+                border: none;border-radius: 5px;font-size: medium;">Submit
+            </button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
+<!--&lt;!&ndash;enctype :that stands for encription type-->
+<!--  multipart/form-data :which is used to encript files in html forms;-->

@@ -1,0 +1,11 @@
+
+  [{
+    "id": 1,
+    "moviename": "Leo",
+    "relase_date": "2023-10-19",
+    "character_name": "Vijay,Trisha,Mathew,",
+    "theatre_name": "Surabhi,d_cinemas",
+    "director_name": "Lokesh kanagaraj",
+    "rating": 9
+  }
+]

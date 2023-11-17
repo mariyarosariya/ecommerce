@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 450px;width: 450px;background-color: green;">
+        <form action="" method="POST">{% csrf_token %}
+        <label for="">Name:</label>
+        <input type="text" name="name" id=""><br><br>
+        <label for="">state:</label><br>
+        <select name="state" id="">
+            <option value="kerala">Kerala</option>
+            <option value="karnataka">Karantaka</option>
+            <option value="goa">Goa</option>
+
+        </select>
+        <br><br>
+        <label for="">Language:</label>
+        <input type="checkbox" name="english">English
+        <input type="checkbox" name="malayalam">Malayalam
+        <input type="checkbox" name="hindi">Hindi
+
+        <br><br>
+        <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+</body>
+</html>
+<!--fullname-->
+<!--state:<select>box-->
+<!--language:3 checkboxes-->
+<!--submit-->
